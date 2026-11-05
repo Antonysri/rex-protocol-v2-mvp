@@ -61,3 +61,4 @@ describe('ThemeToggle & ThemeProvider', () => {
     expect(screen.getByText('Dark Mode')).toBeInTheDocument()
   })
 })
+

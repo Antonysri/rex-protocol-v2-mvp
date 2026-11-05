@@ -84,3 +84,4 @@ export function ThemeToggle({ className, variant = 'icon' }: ThemeToggleProps) {
     </button>
   )
 }
+

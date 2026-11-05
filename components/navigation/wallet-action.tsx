@@ -46,7 +46,7 @@ export function WalletAction({ className }: WalletActionProps) {
         className={cn(
           'h-9 gap-1.5 rounded-full bg-brand px-3.5 text-[13px] font-semibold text-white transition-colors hover:bg-brand-hover disabled:cursor-not-allowed disabled:opacity-70',
           formattedAddress &&
-            'border border-success/40 bg-success/10 font-mono text-[12.5px] text-emerald-200 hover:bg-success/15',
+            'border border-success/40 bg-success/10 font-mono text-[12.5px] text-emerald-600 dark:text-emerald-200 hover:bg-success/15',
           className,
         )}
         onClick={() => void connectWallet()}

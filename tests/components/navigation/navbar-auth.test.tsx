@@ -4,6 +4,7 @@ import { Navbar } from '@/components/navigation/navbar'
 import { AuthProvider } from '@/providers/auth-provider'
 import { ToastProvider } from '@/providers/toast-provider'
 import { WalletProvider } from '@/providers/wallet-provider'
+import { ThemeProvider } from '@/providers/theme-provider'
 
 type EthereumMock = {
   request: jest.Mock<Promise<unknown>, [{ method: string }]>
@@ -22,13 +23,15 @@ function setEthereum(ethereum?: EthereumMock) {
 
 function renderNavbar() {
   return render(
-    <ToastProvider>
-      <AuthProvider>
-        <WalletProvider>
-          <Navbar />
-        </WalletProvider>
-      </AuthProvider>
-    </ToastProvider>,
+    <ThemeProvider>
+      <ToastProvider>
+        <AuthProvider>
+          <WalletProvider>
+            <Navbar />
+          </WalletProvider>
+        </AuthProvider>
+      </ToastProvider>
+    </ThemeProvider>,
   )
 }
 
@@ -43,6 +46,7 @@ async function signIn(user: ReturnType<typeof userEvent.setup>) {
 
 afterEach(() => {
   Reflect.deleteProperty(window, 'ethereum')
+  localStorage.clear()
 })
 
 describe('Navbar authentication', () => {

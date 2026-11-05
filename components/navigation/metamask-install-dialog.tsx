@@ -17,10 +17,10 @@ type MetaMaskInstallDialogProps = {
 export function MetaMaskInstallDialog({ open, onOpenChange }: MetaMaskInstallDialogProps) {
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="border-white/10 bg-gray-950 text-white sm:max-w-md">
+      <DialogContent className="border-slate-200 bg-white text-slate-900 shadow-xl dark:border-white/10 dark:bg-gray-950 dark:text-white sm:max-w-md">
         <DialogHeader>
           <DialogTitle>MetaMask is not installed</DialogTitle>
-          <DialogDescription className="text-gray-300">
+          <DialogDescription className="text-slate-600 dark:text-gray-300">
             Install MetaMask to connect your wallet and continue with blockchain-based investment
             features. After installing MetaMask, refresh this page and try again.
           </DialogDescription>

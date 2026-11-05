@@ -28,7 +28,7 @@ const steps = [
 
 export function HowItWorks() {
   return (
-    <section className="bg-surface-elevated py-28 sm:py-36">
+    <section className="bg-slate-100/70 py-28 sm:py-36 transition-colors duration-200 dark:bg-surface-elevated">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeader
           title={
@@ -45,11 +45,11 @@ export function HowItWorks() {
           {steps.map((step) => (
             <article
               key={step.title}
-              className="group rounded-2xl bg-white/[0.025] p-8 transition-colors hover:bg-white/[0.045]"
+              className="group rounded-2xl border border-slate-200/80 bg-white p-8 shadow-sm transition-all hover:shadow-md dark:border-white/5 dark:bg-white/[0.025] dark:shadow-none dark:hover:bg-white/[0.045]"
             >
               <step.icon className="h-10 w-10 text-brand" strokeWidth={1.5} aria-hidden="true" />
-              <h3 className="mt-7 text-xl font-semibold text-white">{step.title}</h3>
-              <p className="mt-3 text-[14px] leading-relaxed text-gray-400">{step.description}</p>
+              <h3 className="mt-7 text-xl font-semibold text-slate-900 dark:text-white">{step.title}</h3>
+              <p className="mt-3 text-[14px] leading-relaxed text-slate-600 dark:text-gray-400">{step.description}</p>
               <Link
                 href={step.href}
                 className="mt-7 inline-flex items-center gap-3 text-sm font-semibold text-brand transition-colors hover:text-brand-soft"

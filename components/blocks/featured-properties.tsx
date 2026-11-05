@@ -10,14 +10,14 @@ export function FeaturedProperties() {
   const featured = properties.slice(0, FEATURED_LIMIT)
 
   return (
-    <section className="scroll-mt-24 bg-surface-base py-28 sm:py-36" id="featured-properties">
+    <section className="scroll-mt-24 bg-slate-50 py-28 sm:py-36 transition-colors duration-200 dark:bg-surface-base" id="featured-properties">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div>
-            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+            <h2 className="text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">
               Featured Properties
             </h2>
-            <p className="mt-2 text-base text-gray-400">
+            <p className="mt-2 text-base text-slate-600 dark:text-gray-400">
               Hand-picked deals available for fractional ownership today.
             </p>
           </div>
@@ -34,7 +34,7 @@ export function FeaturedProperties() {
             <Button
               size="lg"
               variant="outline"
-              className="h-11 gap-2 rounded-full border-white/15 bg-white/5 px-6 text-sm font-semibold text-white backdrop-blur-md hover:bg-white/10 hover:text-white"
+              className="h-11 gap-2 rounded-full border-slate-300 bg-white text-sm font-semibold text-slate-800 shadow-sm backdrop-blur-md hover:bg-slate-100 hover:text-slate-900 dark:border-white/15 dark:bg-white/5 dark:text-white dark:shadow-none dark:hover:bg-white/10 dark:hover:text-white"
             >
               See More Properties
               <ArrowRight className="h-4 w-4" aria-hidden="true" />

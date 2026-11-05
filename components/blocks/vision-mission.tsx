@@ -7,16 +7,16 @@ const MISSION_IMAGE =
 
 export function VisionMission() {
   return (
-    <section className="bg-surface-base py-28 sm:py-36">
+    <section className="bg-slate-50 py-28 sm:py-36 transition-colors duration-200 dark:bg-surface-base">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid gap-12 md:grid-cols-2 md:gap-16">
           {/* Our Vision — text on top, image below */}
           <div className="flex flex-col gap-8">
             <div>
-              <h3 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+              <h3 className="text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">
                 Our Vision
               </h3>
-              <p className="mt-4 text-[15px] leading-relaxed text-gray-400 sm:text-base">
+              <p className="mt-4 text-[15px] leading-relaxed text-slate-600 dark:text-gray-400 sm:text-base">
                 Founded in 2023 by a team of real estate veterans and blockchain innovators,
                 BlockEstate emerged from a simple yet powerful idea: make premium real estate
                 investment accessible to everyone. Our vision is to redefine property ownership for
@@ -46,10 +46,10 @@ export function VisionMission() {
               />
             </div>
             <div className="order-1 md:order-2">
-              <h3 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+              <h3 className="text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl">
                 Our Mission
               </h3>
-              <p className="mt-4 text-[15px] leading-relaxed text-gray-400 sm:text-base">
+              <p className="mt-4 text-[15px] leading-relaxed text-slate-600 dark:text-gray-400 sm:text-base">
                 BlockEstate&apos;s mission is to democratize real estate investment by removing
                 traditional barriers to entry while maintaining the highest standards of security
                 and transparency. We believe everyone should have the opportunity to invest in

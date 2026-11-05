@@ -6,6 +6,7 @@ This project aims to innovate the real estate industry by integrating blockchain
 ---
 
 ### **Key Features**  
+- **Light & Dark Theme Toggle**: Seamless switch between light and dark modes with persistent localStorage saving and system preference detection. Zero flicker on reload.
 - **Tokenized Real Estate**: Convert properties into NFTs, enabling fractional ownership.  
 - **Smart Contracts**: Automate and secure property transactions.  
 - **Crypto Payments**: Accept cryptocurrency for purchases, rentals, and investments.  
@@ -17,19 +18,20 @@ This project aims to innovate the real estate industry by integrating blockchain
 
 ### **Technologies**  
 - **Blockchain**: Ethereum, Binance Smart Chain.  
-- **Frontend**: Next.js.  
-- **Backend**: Node.js.
+- **Frontend**: Next.js 15, React 19, Tailwind CSS.  
+- **Backend**: Node.js.  
 - **Database**: MongoDB for decentralized storage.  
 - **Wallet Integration**: MetaMask, Trust Wallet, and more.  
+- **Testing**: Jest, React Testing Library.  
 
 ---
 
-### **Setup**  
+### **Setup & Commands**  
 
 1. **Clone the Repository**:  
    ```bash  
-   git clone URL
-   
+   git clone <repo-url>
+   cd rex-protocol-v2
    ```  
 
 2. **Install Dependencies**:  
@@ -37,19 +39,28 @@ This project aims to innovate the real estate industry by integrating blockchain
    npm install  
    ```  
 
-3. **Run the Application**:  
+3. **Run Unit Tests**:  
    ```bash  
-   npm run dev  
+   npm test  
    ```  
 
-4. **Environment Configuration**:  
-   - Add your blockchain network details in `.env`.  
-   - Set API keys and wallet configurations.  
+4. **Lint & Build**:  
+   ```bash  
+   npm run lint
+   npx next build
+   ```  
+
+5. **Run the Application**:  
+   ```bash  
+   npm start
+   # or
+   npx next dev
+   ```  
 
 ---
 
 ### **Usage**  
-- **Users**: Invest in properties, make payments, and manage ownership.  
+- **Users**: Toggle Light/Dark mode from Navbar, invest in properties, make payments, and manage ownership.  
 - **Admins**: Tokenize properties and oversee marketplace activities.  
 
 ---

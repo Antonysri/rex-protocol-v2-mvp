@@ -23,14 +23,14 @@ export function SectionHeader({
       {eyebrow ? <Eyebrow>{eyebrow}</Eyebrow> : null}
       <h2
         className={cn(
-          'text-3xl font-bold tracking-tight text-white sm:text-4xl md:text-5xl',
+          'text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl md:text-5xl',
           eyebrow && 'mt-5',
         )}
       >
         {title}
       </h2>
       {description ? (
-        <p className="mt-4 text-base leading-relaxed text-gray-400 sm:text-lg">{description}</p>
+        <p className="mt-4 text-base leading-relaxed text-slate-600 dark:text-gray-400 sm:text-lg">{description}</p>
       ) : null}
     </div>
   )

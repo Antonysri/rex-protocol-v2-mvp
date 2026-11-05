@@ -29,9 +29,9 @@ export function NavigationLinks({
             href={item.href}
             aria-current={isActive ? 'page' : undefined}
             className={cn(
-              'group relative inline-flex items-center gap-1.5 text-[14px] font-medium text-gray-300 transition-colors hover:text-white focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-white/40',
-              variant === 'mobile' && 'block rounded-md px-2 py-2',
-              isActive && 'text-white',
+              'group relative inline-flex items-center gap-1.5 text-[14px] font-medium text-slate-600 transition-colors hover:text-slate-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-brand/40 dark:text-gray-300 dark:hover:text-white',
+              variant === 'mobile' && 'block rounded-md px-2 py-2 hover:bg-slate-100 dark:hover:bg-white/5',
+              isActive && 'text-slate-900 font-semibold dark:text-white',
             )}
             onClick={onNavigate}
           >

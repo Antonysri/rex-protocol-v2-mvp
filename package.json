@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "dev": "next dev",
+    "build": "next build",
     "start": "node auth/server.js | npx concurrently \"next dev\" \"npx wait-on http://localhost:3000 && start http://localhost:3000\"",
     "lint": "next lint",
     "test": "jest"
